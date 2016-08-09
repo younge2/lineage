@@ -24,3 +24,8 @@ ctrl.controller('Home', ['$scope', '$http', function($scope, $http) {
 	}
 
 }]);
+
+
+ctrl.controller('NavCtrl', ['$scope', '$state', function($scope, $state) {
+
+}]);
