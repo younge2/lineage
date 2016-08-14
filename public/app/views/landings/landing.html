@@ -1,0 +1,52 @@
+<div ng-controller="Landing">
+<div id="aContainer">
+
+<div id="lContainer" class="container">
+	<h1>Landing Service</h1>
+	<div class="row">
+  	<div class="col-md-4">
+  		<div id="hPhone">
+  		<h3>Free Estimates!</h3>
+  		<h1>Call Now</h1>
+  		<h3>1-425-296-8120</h3>
+  		</div>
+  	</div>
+
+	  	<div id="lContact" class="col-md-8">
+				<h1>Send us a Message</h1>
+					<form id="lContactF" class="emailForm">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									
+									<input class="form-control" data-ng-model="InputName" placeholder="Name">
+								</div>
+								<div class="form-group">
+									
+									<input class="form-control" data-ng-model="InputPhone" placeholder="Phone">
+								</div>
+								<div class="form-group">
+									
+									<input class="form-control" data-ng-model="InputEmail" placeholder="Email">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								<textarea class="form-control" data-ng-model="InputMessage" rows="6">{{InputMessage}}</textarea>
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-default" ng-click="sendMail()">Submit</button>
+					</div>
+
+				</form>
+		</div>
+  	</div>
+</div>
+
+<div id="hBanner">	
+<img src="http://imgur.com/hONXP7x.png" class="img-responsive homeAdvisorBadge">
+	</div>
+</div>
+</div>

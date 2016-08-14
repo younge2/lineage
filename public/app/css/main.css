@@ -2,14 +2,16 @@
 body {
 	background-image: url("http://i.imgur.com/Rk1wJnO.jpg");
 	background-size: auto;
+	font-family: 'Rye', cursive;
 }
 
 #titleHead {
+	position: relative;
 	max-width: 980px;
 	margin: 0 auto;
 	height: 8em;
 	text-align: center;
-	z-index: -2;
+	z-index: 2;
 
 }
 
@@ -20,7 +22,7 @@ body {
 #logo {
 	float: left;
 	height: 200%;
-	z-index: -1;
+	
 }
 
 #siteTitle {
@@ -39,6 +41,7 @@ color: white;
 }
 
 .navbar {
+	position: relative;
 	background-color: #86572A;
 	opacity: .9;
 	font-size: 1em;
@@ -47,7 +50,8 @@ color: white;
 	max-width: 980px;
 	margin: 0 auto;
 	padding-top: 1em;
-
+	z-index: 0;
+	
 }
 
 .navbar .nav  li  a {
@@ -81,6 +85,7 @@ color: white;
 }
 
 .hSec {
+	border-radius: 5%;
 	opacity: 1.0;
 	background-color:#2a261e;
 	padding: 1em 1em;
@@ -95,10 +100,32 @@ color: white;
 	     1px 1px 0 #000;
 }
 
+#hPhone {
+	border-radius: 5%;
+	background-color:#2a261e;
+	max-height: 70vh;
+	min-height: 15em;
+	width: 20em;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 0em;
+	display: flex;
+	flex-direction: column;
+	margin-top: 1em;
+
+	color: white;
+	
+	  text-shadow:
+	   -1px -1px 0 #000,  
+	    1px -1px 0 #000,
+	    -1px 1px 0 #000,
+	     1px 1px 0 #000;
+}
+
 #hWelcome {
 	max-height: 70vh;
 	min-height: 10em;
-	padding-top: 0em;
+	padding-top: .5em;
 }
 
 
@@ -112,6 +139,12 @@ color: white;
 	height: 338px;
 }
 
+.homeAdvisorBadge {
+	position: relative;
+	left: 75%;
+	top: 15%;
+}
+
 .ServCol {
 	display: flex;
 	flex-direction: column;
@@ -121,6 +154,9 @@ color: white;
 
 .Serv {
 	margin-bottom: .5em;
+	max-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #about {
@@ -133,4 +169,112 @@ color: white;
 	margin-left: 1em;
 	margin-right: 1em;
 }
+
+
+#aContainer {
+	background-color: #C7B4A1;
+	
+	max-width: 980px;
+	width: 90%;
+	/*background-color: #76410E;*/
+	opacity: 1;
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 3em;
+	padding: 1em;
+}
+
+#aAbout {
+
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	padding: .5em;
+	background-color: #2a261e;
+
+	color: white;
+	
+	  text-shadow:
+	   -1px -1px 0 #000,  
+	    1px -1px 0 #000,
+	    -1px 1px 0 #000,
+	     1px 1px 0 #000;
+
+
+}
+
+#aAbout p {
+	margin-left: 1em;
+}
+
+#aComp {
+	display: flex;
+	flex-direction: row;
+
+}
+
+#aboutPic {
+	max-width: 364px;
+	width: 30vw;
+}
+
+#aDesc {
+	padding: 1em;
+}
+
+.container {
+	width: 100%;
+}
+
+.servBox {
+	text-align: center;
+}
+
+.servBox img {
+	margin: 0 auto;
+}
+
+.servTitle {
+	background-color: #2a261e;
+
+	color: white;
+	
+	  text-shadow:
+	   -1px -1px 0 #000,  
+	    1px -1px 0 #000,
+	    -1px 1px 0 #000,
+	     1px 1px 0 #000;
+}
+
+#contactSec {
+	text-align: center;
+}
+
+#thankYou {
+	height: 60vh;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	background-color: #2a261e;
+
+	color: white;
+	
+	  text-shadow:
+	   -1px -1px 0 #000,  
+	    1px -1px 0 #000,
+	    -1px 1px 0 #000,
+	     1px 1px 0 #000;
+
+}
+
+#lContainer {
+	margin-bottom: 2em;
+}
+
 

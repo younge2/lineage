@@ -1,0 +1,67 @@
+<div ng-controller="Contact">
+<div id="aContainer">
+
+	<div id="aAbout">
+	<h1>Contact</h1>
+	</div>
+
+	<div id="contactInfo" class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div id="address">
+					<h3>Lineage Tree Care</h3>
+					<p>702 5th St</p>
+					<p>Snohomish, WA</p>
+					<p>1-425-296-8120</p>
+				</div>
+				<div id="servAreas">
+				<h3>Areas Covered:</h3>
+				<p>Included but not limited to...</p>
+				<p>Snohomish</p>
+				<p>Bothell</p>
+				<p>Mill Creek</p>
+				<p>Woodinville</p>
+				<p>Seattle</p>
+				<p>Alington</p>
+				<p>Marysville</p>
+				<p>Lynwood</p>
+				<p>Lake Stevens</p>
+				<p>Edmonds</p>
+				<p>Shoreline</p>
+				<p>Redmond</p>
+				<p>Everett</p>
+				</div>
+			</div>
+			<div id="contactSec" class="col-md-8">
+			<h1>Send us a Message</h1>
+				<form id="contactF" class="emailForm">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								
+								<input class="form-control" data-ng-model="InputName" placeholder="Name">
+							</div>
+							<div class="form-group">
+								
+								<input class="form-control" data-ng-model="InputPhone" placeholder="Phone">
+							</div>
+							<div class="form-group">
+								
+								<input class="form-control" data-ng-model="InputEmail" placeholder="Email">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+							<textarea class="form-control" data-ng-model="InputMessage" rows="6">{{InputMessage}}</textarea>
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-default" ng-click="sendMail()">Submit</button>
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+</div>

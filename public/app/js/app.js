@@ -15,10 +15,6 @@ treeApp.config([
 			url: '/',
 			templateUrl: 'app/views/home.html'
 		})
-		.state('main', {
-			url: '/landing',
-			templateUrl: 'app/views/landings/main.html'
-		})
 		.state('about', {
 			url: '/about',
 			templateUrl: 'app/views/about.html'
@@ -34,6 +30,14 @@ treeApp.config([
 		.state('services', {
 			url: '/services',
 			templateUrl: 'app/views/services.html'
+		})
+		.state('thanks', {
+			url: '/thanks',
+			templateUrl: 'app/views/landings/thanks.html'
+		})
+		.state('landing', {
+			url: '/landing',
+			templateUrl: 'app/views/landings/landing.html'
 		})
 		.state('404', {
 			url: '/404',
