@@ -65,7 +65,7 @@ color: white;
 }
 
 .navbar .navbar-collapse {
-	/*background-color: #86572A;*/
+	background-color: #86572A;
 	opacity: 0.9;
 	font-size: 1.5em;
   	text-align: center;
@@ -218,7 +218,7 @@ color: white;
 
 #aboutPic {
 	max-width: 364px;
-	width: 30vw;
+	width: 80vw;
 }
 
 #aDesc {
@@ -275,6 +275,47 @@ color: white;
 
 #lContainer {
 	margin-bottom: 2em;
+}
+
+.deskPhone {
+		display: block;
+	}
+
+.mobilePhone {
+		display: none;
+	}
+
+@media only screen and (max-width: 885px) {
+
+	.deskPhone {
+		display: none;
+	}
+
+	.mobilePhone {
+		display: block;
+	}
+
+	#logo {
+		margin: 0 auto;
+		float: none;
+	}
+
+	#aAbout {
+		display: block;
+	}
+
+	.navbar {
+		z-index: 3;
+	}
+
+	#aComp {
+		display: block;
+	}
+
+	#aboutPic {
+		margin: 0 auto;
+	}
+
 }
 
 
