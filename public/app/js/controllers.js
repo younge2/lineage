@@ -29,7 +29,7 @@ ctrl.controller('About', ['$scope', '$state', function($scope, $state) {
 
 }]);
 
-ctrl.controller('Contact', ['$scope', '$state', function($scope, $state) {
+ctrl.controller('Contact', ['$scope', '$state', '$location', '$http', function($scope, $state, $location, $http) {
     $scope.MessageIn = "Message";
     $scope.InputName = "";
     $scope.InputEmail = "";
@@ -50,13 +50,14 @@ ctrl.controller('Contact', ['$scope', '$state', function($scope, $state) {
                     // when the response is available
                     console.log("success");
                     console.log($scope.data);
-                    
+                    $location.path('/thanks');
  
                 }).
                 error(function(data, status, headers, config) {
                     // called asynchronously if an error occurs
                     // or server returns response with an error status.
                     console.log("error");
+                     $location.path('/thanks');
                 });
     }
 
