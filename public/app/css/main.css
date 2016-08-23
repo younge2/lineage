@@ -105,7 +105,8 @@ color: white;
 	background-color:#2a261e;
 	max-height: 70vh;
 	min-height: 15em;
-	width: 20em;
+	max-width: 100%;
+	width: 20em;	
 	text-align: center;
 	margin: 0 auto;
 	padding-top: 0em;
@@ -184,7 +185,7 @@ color: white;
 	padding: 1em;
 }
 
-#aAbout {
+.aAbout {
 
 	width: 90%;
 	display: flex;
@@ -206,7 +207,7 @@ color: white;
 
 }
 
-#aAbout p {
+.aAbout p {
 	margin-left: 1em;
 }
 
@@ -235,6 +236,7 @@ color: white;
 
 .servBox img {
 	margin: 0 auto;
+	max-height: 251px;
 }
 
 .servTitle {
@@ -273,7 +275,20 @@ color: white;
 
 }
 
-#lContainer {
+.lanContent {
+	display: flex;
+	flex-direction: row;
+	margin: 0 auto;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	padding: .5em;
+}
+
+.lanContent p {
+	padding: .5em;
+}
+
+.lContainer {
 	margin-bottom: 2em;
 }
 
@@ -314,6 +329,10 @@ color: white;
 
 	#aboutPic {
 		margin: 0 auto;
+	}
+
+	.lanConHeader {
+		text-align: center;
 	}
 
 }

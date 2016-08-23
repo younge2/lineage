@@ -35,9 +35,21 @@ treeApp.config([
 			url: '/thanks',
 			templateUrl: 'app/views/landings/thanks.html'
 		})
-		.state('landing', {
-			url: '/landing',
-			templateUrl: 'app/views/landings/landing.html'
+		.state('removal', {
+			url: '/removal',
+			templateUrl: 'app/views/landings/removal.html'
+		})
+		.state('trimming', {
+			url: '/trimming',
+			templateUrl: 'app/views/landings/trimming.html'
+		})
+		.state('cleanup', {
+			url: '/cleanup',
+			templateUrl: 'app/views/landings/cleanup.html'
+		})
+		.state('clearing', {
+			url: '/clearing',
+			templateUrl: 'app/views/landings/clearing.html'
 		})
 		.state('404', {
 			url: '/404',

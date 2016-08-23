@@ -1,0 +1,64 @@
+<div ng-controller="Landing">
+<div id="aContainer">
+
+<div class="lContainer container">>
+	<h1>Tree Trimming</h1>
+	<div class="row">
+  	<div class="col-md-4">
+  		<div id="hPhone">
+  		<h3>Free Estimates!</h3>
+  		<h1>Call Now</h1>
+  		<h3>1-425-296-8120</h3>
+  		</div>
+  	</div>
+
+	  	<div  class="col-md-8">
+				<h2>Send us a Message</h2>
+					<form  class="emailForm">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									
+									<input class="form-control" data-ng-model="InputName" placeholder="Name">
+								</div>
+								<div class="form-group">
+									
+									<input class="form-control" data-ng-model="InputPhone" placeholder="Phone">
+								</div>
+								<div class="form-group">
+									
+									<input class="form-control" data-ng-model="InputEmail" placeholder="Email">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+								<textarea class="form-control" data-ng-model="InputMessage" rows="6">{{InputMessage}}</textarea>
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-default" ng-click="sendMail()">Submit</button>
+					</div>
+
+				</form>
+		</div>
+  	</div>
+</div>
+<hr>
+<div class="lanConHeader"><h2>The Lineage Service</h2></div>
+<div class="lanContent container">	
+<div class="row">
+	<div class="col-md-4">
+		<img src="http://imgur.com/AV3KOmM.jpg" class="img-responsive">
+	</div>
+	<div class="col-md-4">
+	<p>There are many reasons to provide trimming to a living tree. Removing dead limbs will help maintain the general health, reduce stress to the trunk and prevents them from coming down unexpectedly.</p>
+	</div>
+	<div class="col-md-4">
+	<p>We also offer wind-sail reduction techniques to prepare for heavy wind storms. Often times it can be aesthetically pleasing to remove the first few limbs on a tree. This creates a cleaner look and provides more vertical space so that surrounding life forms can be appreciated.</p>
+	</div>
+</div>
+</div>
+
+</div>
+</div>
