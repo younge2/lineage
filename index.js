@@ -26,7 +26,7 @@ app.post('/contact-form', function(req,res){
      service: 'gmail',
      auth: {
      	user: 'turtlesrock10342@gmail.com',
-     	pass: 'password42'
+     	pass: 'check'
      }
 	});
 	var data = req.body;
